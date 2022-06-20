@@ -1,0 +1,56 @@
+/* DEFAULTS */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box}
+html,body { position:relative; padding:0; border:0; margin:0; font-family: 'Arial', serif; font-size:16px; min-width:320px; background-color: #000; color:#fff;}
+article,aside,details,figcaption,figure,footer,header,main,nav,section,summary { display:block}
+audio,canvas,video { display:inline-block}
+code {font-family: monospace;}
+img { display:block; max-width:100%; height:auto;}
+address { font-style:normal; margin-bottom:10px}
+
+a{color: #fff;text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+h1, h2, h3, h4, header, .copyright {font-family: 'Libre Baskerville', serif;}
+
+header, main, footer{width: 100%;margin: auto;}
+
+header .contents, main .contents, footer .contents {max-width:calc(960px + 40px);margin: auto;position: relative;}
+.contents.padding { padding:0px 20px}
+/* DEFAULTS END  */
+
+header .logo{text-transform: uppercase;font-size: 28px;padding: 20px 0px;display: block;text-align: center;}
+
+nav {position: absolute;background-color: #fff;top: 0px;right: 0px;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;z-index: 2;}
+nav ul {list-style: none;padding: 0px;margin: 0px;}
+nav ul li {display: inline-block;padding:8px;}
+nav ul li a {display: block;width: 40px;height: 40px;margin: 0px 10px;transform: scale(1.0);transition: all 0.25s ease-in-out;}
+nav ul li a:hover{transform: scale(1.25);}
+nav ul li a svg {width: 100%;height: 100%;}
+  
+.pagetext{text-align: center;}
+
+.largeThing {text-align: center;}
+.largeThing img{width: 100%;max-height: 600px;object-fit: contain;margin: auto;}
+.largeThing h1 {margin-bottom: 5px;}
+.largeThing .month {margin-top: 5px;font-style: italic;}
+
+.thing-gallery {display: grid;gap: 20px;grid-template-columns: repeat(3, 1fr);padding: 0px 20px;}
+.thing-gallery .smallThing a {text-align: center;display: block;transform: scale(1.00);transition: all 0.25s ease-in-out;}
+.thing-gallery .smallThing a:hover{text-decoration: none;transform: scale(1.05);}
+.thing-gallery .smallThing a img{width: 100%;max-height: 300px;max-height:300px; object-fit: contain;margin: auto;}
+.thing-gallery .smallThing a h2 {margin-bottom: 5px;}
+.thing-gallery .smallThing a .month {margin-top: 5px;font-style: italic;}
+
+footer .copyright {text-align: center;text-transform: uppercase;margin: 60px auto 20px auto;}
+
+@media screen and (max-width: 700px) {
+  header .logo {text-align: left; margin-bottom: 60px;padding-left: 20px;}
+  nav ul li {display: block;}
+  .thing-gallery {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media screen and (max-width: 400px) {
+  header .logo {font-size: 20px;}
+}
